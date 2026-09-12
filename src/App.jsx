@@ -4,6 +4,7 @@ import Navbar from "./components/Nav"
 import Hero from "./components/Hero"
 import Grid from "./components/Grid"
 import YourStack from "./components/YourStack"
+import { toast } from "react-toastify"
 
 function  App() {
   const [technologies, setTechnologies] = useState([])
@@ -20,19 +21,23 @@ function  App() {
       const alreadyAdded = Stack.some((item) => item.id === tech.id)
 
       if (alreadyAdded){
-        alert(`${tech.name} is already Added`)
+        toast.warning(`${tech.name} is already Added`)
         return
       }
 
       setStack([...Stack, tech])
+      toast.success(`${tech.name} added to your stack`)
      }
 
      function handleRemove(id){
+      const removedTech = Stack.find((item) => item.id ===id)
       setStack(Stack.filter((item) => item.id !== id))
+      toast.info(`${removedTech.name} removed from your stack.`)
      }
 
      function handleRemoveAll(){
       setStack([])
+      toast.info('All technologies removed from your stack')
      }
 
 
