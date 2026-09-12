@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import technologiesData from "./data/technologies.json"
 import Navbar from "./components/Nav"
 import Hero from "./components/Hero"
-
+import Grid from "./components/Grid"
 
 function  App() {
   const [technologies, setTechnologies] = useState([])
@@ -24,17 +24,8 @@ function  App() {
     <div>
       <Navbar/>
       <Hero/>
+      <Grid technologies={technologies}/>
       
-      <h1 className="text-3xl font-bold text-center mt-6">
-        Total Techologies: {technologies.length}
-      </h1>
-      <ul className="max-w-md mx-auto mt-4">
-        {technologies.map((tech) => (
-          <li key={tech.id} className="border-b py-2">
-            {tech.name} - {tech.category}
-          </li>
-        ))}
-      </ul>
     </div>
 
   )
