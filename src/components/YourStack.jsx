@@ -2,8 +2,8 @@ import { X } from "lucide-react";
 
 function YourStack({ Stack, Remove, RemoveAll }) {
   return (
-    <aside className="max-w-7xl mx-auto px-6 pb-10">
-      <div className="border rounded-2xl p-5 shadow-sm">
+    <aside className="w-full lg:w-80 shrink-0">
+      <div className="border rounded-2xl p-5 shadow-sm lg:sticky lg:top-20">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl font-bold">
             Your Stack{" "}

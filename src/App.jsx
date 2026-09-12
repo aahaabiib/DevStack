@@ -46,8 +46,10 @@ function  App() {
     <div>
       <Navbar/>
       <Hero/>
-      <YourStack Stack={Stack} Remove = {handleRemove} RemoveAll = {handleRemoveAll}/>
+      <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col lg:flex-row gap-8">
       <Grid technologies={technologies} Stack= {Stack} clickToAdd= {handleAddToStack}/>
+      <YourStack Stack={Stack} Remove = {handleRemove} RemoveAll = {handleRemoveAll}/>
+      </div>
       
     </div>
 
