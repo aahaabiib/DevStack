@@ -7,12 +7,25 @@ import Grid from "./components/Grid"
 function  App() {
   const [technologies, setTechnologies] = useState([])
   const [loading, setLoading] = useState(true)
+  const [Stack, setStack] = useState([])
   
   useEffect(() => {
     
       setTechnologies(technologiesData)
       setLoading(false)
      }, [])
+
+     function handleAddToStack(tech){
+      const alreadyAdded = Stack.some((item) => item.id === tech.id)
+
+      if (alreadyAdded){
+        alert(`${tech.name} is already Added`)
+        return
+      }
+
+      setStack([...Stack, tech])
+     }
+
 
   if(loading){
     return <p className="text-center mt-10">Loading...</p>
@@ -24,7 +37,7 @@ function  App() {
     <div>
       <Navbar/>
       <Hero/>
-      <Grid technologies={technologies}/>
+      <Grid technologies={technologies} Stack= {Stack} clickToAdd= {handleAddToStack}/>
       
     </div>
 

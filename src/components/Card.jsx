@@ -2,7 +2,7 @@ import {Star} from 'lucide-react'
 
 
 
-function Card({tech}){
+function Card({tech, clickToAdd, isAdded}){
     return (
         <div className="border rounded-2xl p-5 shadow-sm hover:shadow-md transition flex flex-col gap-3">
             <div className="flex items-center justify-between">
@@ -30,13 +30,12 @@ function Card({tech}){
                  <Star size={16} className="text-yellow-500 fill-yellow-500"/>
                 {tech.rating} 
                 </div>
-
             </div>
 
+            <button onClick={()=> clickToAdd(tech)} disabled={isAdded} className={`mt-2 w-full py-2 rounded-full font-medium ${isAdded ? 'bg-gray-300 text-gray-600 cursor-not-allowed' : 'text-white bg-gradient-to-r from-orange-500 to-violet-600'}`}>
 
-            
-            <button className='mt-2 w-full py-2 rounded-full text-white font-medium bg-gradient-to-r from-orange-500 to-violet-600'>
-                Add to Stack
+                    {isAdded ? ' Added to Stack' : 'Add to Stack'}
+
             </button>
         </div>
     )
