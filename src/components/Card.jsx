@@ -1,4 +1,4 @@
-import {Star} from 'lucide-react'
+import {Star, Check} from 'lucide-react'
 
 
 
@@ -32,9 +32,13 @@ function Card({tech, clickToAdd, isAdded}){
                 </div>
             </div>
 
-            <button onClick={()=> clickToAdd(tech)} disabled={isAdded} className={`mt-2 w-full py-2 rounded-full font-medium ${isAdded ? 'bg-gray-300 text-gray-600 cursor-not-allowed' : 'text-white bg-gradient-to-r from-orange-500 to-violet-600'}`}>
+            <button onClick={()=> clickToAdd(tech)} disabled={isAdded} className={`mt-2 w-full py-2 rounded-full font-medium flex items-center justify-center gap-2 ${isAdded ? 'bg-gray-300 text-gray-600 cursor-not-allowed' : 'text-white bg-gradient-to-r from-orange-500 to-violet-600'}`}>
 
-                    {isAdded ? ' Added to Stack' : 'Add to Stack'}
+                    {isAdded ? (
+                        <>
+                        <Check size = {18}/> Added to Stack
+                        </>
+                    )  : ('Add to Stack')}
 
             </button>
         </div>
