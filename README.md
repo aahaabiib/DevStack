@@ -26,9 +26,8 @@ Dev stack helps developers descover different frontend, backend, database, and O
 
 ## Links     
 
-    *GitHub Repository = https://github.com/aahaabiib/DevStack.git
-
-    *Live Site = https://dev-stack-lilac.vercel.app/
+- **GitHub Repository:** https://github.com/aahaabiib/DevStack.git
+- **Live Site:** https://dev-stack-lilac.vercel.app/
 
 ## React Concepts Q & A
 
