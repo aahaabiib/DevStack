@@ -18,7 +18,7 @@ Dev stack helps developers descover different frontend, backend, database, and O
 
 ## Feaures
 
-    1. *Browse & Filter Technologies- View lots of technologies in a responsive grid, each showing category, fifficulty, ratting, and a short description.
+    1. *Browse Technologies- View lots of technologies in a responsive grid, each showing category, fifficulty, ratting, and a short description.
 
     2. *Build Your Won Stack- Add technologies to a personal 'Your Stack' panel, remove individual items, or clear the whole stack at once.
 
