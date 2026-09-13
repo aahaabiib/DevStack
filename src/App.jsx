@@ -5,6 +5,7 @@ import Hero from "./components/Hero"
 import Grid from "./components/Grid"
 import YourStack from "./components/YourStack"
 import { toast } from "react-toastify"
+import Footer from "./components/Footer"
 
 function  App() {
   const [technologies, setTechnologies] = useState([])
@@ -55,6 +56,7 @@ function  App() {
       <Grid technologies={technologies} Stack= {Stack} clickToAdd= {handleAddToStack}/>
       <YourStack Stack={Stack} Remove = {handleRemove} RemoveAll = {handleRemoveAll}/>
       </div>
+      <Footer/>
       
     </div>
 
