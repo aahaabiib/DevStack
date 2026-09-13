@@ -6,7 +6,7 @@ function Footer() {
         
         <div className="md:col-span-2">
           
-            <img src="/src/assets/logo-text.png" alt="DevStack-logo" />
+            <img src="/logo-text.png" alt="DevStack-logo" />
           
           <p className="text-sm text-gray-400 mt-3">
             Discover, compare, and build your perfect development stack from the

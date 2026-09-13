@@ -6,7 +6,7 @@ function Navbar(){
         <nav className="sticky top-0 z-50 bg-white shadow-md">
             <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
                 <div>
-                    <img src="/src/assets/logo-text.png" alt="DevStack-logo" />
+                    <img src="/logo-text.png" alt="DevStack-logo" />
                 </div>
 
                 <ul className="hedden md:flex gap-8 font-medium text-gray-700">

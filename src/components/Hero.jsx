@@ -26,7 +26,7 @@ function Hero(){
             </div>
 
             <div className="flex-1">
-                <img src="/src/assets/hero-stack.png" alt="Dev Stack Image" className="w-full max-w-md mx-auto" />
+                <img src="/hero-stack.png" alt="Dev Stack Image" className="w-full max-w-md mx-auto" />
             </div>
         </section>
     )
