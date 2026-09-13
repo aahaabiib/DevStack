@@ -5,8 +5,8 @@ function Navbar(){
     return (
         <nav className="sticky top-0 z-50 bg-white shadow-md">
             <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-                <div className="text-2xl font-bold bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent">
-                    Dev Stack
+                <div>
+                    <img src="/src/assets/logo-text.png" alt="DevStack-logo" />
                 </div>
 
                 <ul className="hedden md:flex gap-8 font-medium text-gray-700">
