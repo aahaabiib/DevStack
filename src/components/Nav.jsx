@@ -14,7 +14,7 @@ function Navbar(){
                 </button>
 
 
-                <div>
+                <div> 
                     <img src="/logo-text.png" alt="DevStack-logo"  />
                 </div>
 
