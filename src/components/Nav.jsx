@@ -2,6 +2,7 @@ import { useState } from "react"
 import {Menu, X} from 'lucide-react'
 
 function Navbar(){
+    //check dropdo menu is open or close
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
@@ -13,11 +14,12 @@ function Navbar(){
                     {menuOpen ? <X size={25}/> : <Menu size={25}/>}
                 </button>
 
-
+                {/* logo */}
                 <div> 
                     <img src="/logo-text.png" alt="DevStack-logo"  />
                 </div>
 
+                {/* Nav links */}
                 <ul className="hidden md:flex gap-8 font-medium text-gray-700">
                     <li className="hover:text-pink-600 cursor-pointer">Home</li>
                     <li className="hover:text-pink-600 cursor-pointer">Technologies</li>
@@ -26,6 +28,7 @@ function Navbar(){
                     <li className="hover:text-pink-600 cursor-pointer">Contact</li>
                 </ul>
 
+                {/* text and gradient button  */}
                 <div className="flex items-center gap-4">
                     <button className="font-medium text-gray-700 hover:text-pink-600">Sign In</button>
                     <button className="px-5 py-2 rounded-full text-white font-medium gradient-button">Sign Up</button>

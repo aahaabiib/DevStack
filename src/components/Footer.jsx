@@ -1,5 +1,7 @@
 function Footer() {
   return (
+
+    // Footer section Start Here 
     <footer className="text-black-100 mt-16 border-t border-b border-gray-200">
         
       <div className=" max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-5 gap-10">
@@ -12,6 +14,8 @@ function Footer() {
             Discover, compare, and build your perfect development stack from the
             best modern technologies.
           </p>
+
+          {/* Social links */}
           <div className="flex gap-4 mt-4">
             <a href="#" className="hover:text-pink-600 cursor-pointer">
               GitHub
@@ -25,6 +29,7 @@ function Footer() {
           </div>
         </div>
 
+        {/* Product links */}
         <div>
           <h3 className="text-black font-semibold mb-3">Product</h3>
           <ul className="space-y-2 text-sm">
@@ -40,6 +45,8 @@ function Footer() {
           </ul>
         </div>
         <div>
+
+          {/* Company links */}
           <h3 className="text-black font-semibold mb-3">Company</h3>
           <ul className="space-y-2 text-sm">
             <li className="hover:text-pink-600 cursor-pointer text-gray-400">
@@ -54,6 +61,8 @@ function Footer() {
           </ul>
         </div>
         <div>
+
+          {/* legal links */}
           <h3 className="text-black font-semibold mb-3">Legal</h3>
           <ul className="space-y-2 text-sm">
             <li className="hover:text-pink-600 cursor-pointer text-gray-400">
@@ -66,8 +75,9 @@ function Footer() {
         </div>
       </div>
 
-      <div className=" max-w-7xl mx-auto py-5 px-6 border-t border-gray-200">
-        <div className=" max-w-7xl mx-auto px-6  flex flex-col sm:flex-row justify-between items-center gap-2 text-sm text-gray-400">
+      {/* Bottom Footer */}
+      <div className=" max-w-7xl mx-auto py-5 border-t border-gray-200">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-2 text-sm text-gray-400">
           <p>
             &copy; 2026 Dev Stack. All rights reserved.
           </p>

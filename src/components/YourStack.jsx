@@ -1,25 +1,26 @@
 import { X } from "lucide-react";
 
+// Your Stack sidebar panel 
 function YourStack({ Stack, Remove, RemoveAll }) {
   return (
     <aside className="w-full lg:w-80 shrink-0">
       <div className="border rounded-2xl p-5 shadow-sm mt-14 lg:sticky lg:top-20">
 
-        
+          {/* Your stack header  */}
           <h2 className="text-xl font-bold">Your Stack </h2>
            <p className="text-sm text-gray-400 mb-4">
             {Stack.length > 0 
             ? `${Stack.length} Technology Selected` : 'No technologies selected yel.'}
            </p>
          
-
+              {/* Empty state  */}
         {Stack.length === 0 && (
           <div className="border border-dashed rounded-xl p-8 text-center text-gray-500 text-sm">
             Your stack is empty.
           </div>
         )}
 
-
+        {/* list of added tichnology */}
           {Stack.length > 0 && 
         <div className="flex flex-col gap-3">
           {Stack.map((tech) => (
@@ -44,7 +45,7 @@ function YourStack({ Stack, Remove, RemoveAll }) {
         
           }
 
-
+          {/* Remove all button  */}
         {Stack.length > 0 && (
 
           <button onClick={RemoveAll}
