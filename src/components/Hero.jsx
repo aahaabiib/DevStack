@@ -8,7 +8,7 @@ function Hero(){
             <div className="flex-1 text-center md:text-left">
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                     Build Your Perfect{' '}
-                    <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent "> 
+                    <span className="gradient-text"> 
                         Tech Stack</span>
                 </h1>
                 <p className="mt-5 text-gray-600 text-lg">
@@ -16,7 +16,7 @@ function Hero(){
                 </p>
 
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                    <button className="px-6 py-4 rounded-full text-white font-medium bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600">
+                    <button className="px-6 py-4 rounded-full text-white font-medium gradient-button">
                         Explore Technologies
                     </button>
                     <button className="px-6 py-3 rounded-full  font-medium border-2 border-gray-500 hover:border-pink-500">

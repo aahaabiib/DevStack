@@ -1,2 +1,14 @@
 @import "tailwindcss";
 
+/* Gradient Brand Theme */
+
+.gradient-button{
+    background-image: linear-gradient(to right, #f97316, #ec4899, #7c3aed);
+}
+
+.gradient-text{
+    background-image: linear-gradient(to right, #f97316, #ec4899, #7c3aed);
+    background-clip: text;
+    color: transparent;
+
+}

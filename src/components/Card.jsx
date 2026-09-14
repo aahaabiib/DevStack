@@ -32,7 +32,7 @@ function Card({tech, clickToAdd, isAdded}){
                 </div>
             </div>
 
-            <button onClick={()=> clickToAdd(tech)} disabled={isAdded} className={`mt-2 w-full py-2 rounded-full font-medium flex items-center justify-center gap-2 ${isAdded ? 'bg-gray-300 text-gray-600 cursor-not-allowed' : 'text-white bg-gradient-to-r from-orange-500 to-violet-600'}`}>
+            <button onClick={()=> clickToAdd(tech)} disabled={isAdded} className={`mt-2 w-full py-2 rounded-full font-medium flex items-center justify-center gap-2 ${isAdded ? 'bg-gray-300 text-gray-600 cursor-not-allowed' : 'text-white gradient-button'}`}>
 
                     {isAdded ? (
                         <>

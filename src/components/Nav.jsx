@@ -28,7 +28,7 @@ function Navbar(){
 
                 <div className="flex items-center gap-4">
                     <button className="font-medium text-gray-700 hover:text-pink-600">Sign In</button>
-                    <button className="px-5 py-2 rounded-full text-white font-medium bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600">Sign Up</button>
+                    <button className="px-5 py-2 rounded-full text-white font-medium gradient-button">Sign Up</button>
                 </div>
             </div>
 
